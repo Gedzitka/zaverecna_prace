@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Titillium Web", sans-serif;
   background-color: #e9e0d8;
@@ -126,16 +134,16 @@ h2 {
   display: block;
   border-radius: 50%;
   border: 1px solid #7e501b;
-  margin: auto;
+  margin: 30px auto;
   margin-bottom: -40px;
 }
 
 .about__section {
   background-color: #e9e0d8;
   padding: 50px;
-  margin-top: 100px;
 }
-.about__section .about__text {
+
+.about__text {
   display: block;
   margin: auto;
   background-color: #243E36;
@@ -145,13 +153,107 @@ h2 {
   padding: 20px;
   box-shadow: 0px 5px 10px 0px #aaa;
 }
-.about__section .about__titel {
+
+.about__titel {
   text-align: center;
   font-size: 25px;
   margin: 20px;
   color: #7e501b;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+.idividual {
+  text-align: center;
+  background-color: #e9e0d8;
+  width: 90%;
+  height: 250px;
+  margin: -20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.individual__title {
+  font-weight: bold;
+  color: #7e501b;
+  text-align: center;
+  font-size: 35px;
+}
+
+.individual__text {
+  width: 80%;
+  color: #7e501b;
+  padding: 10px 0 20px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.table {
+  margin: auto;
+  box-shadow: 0px 5px 10px 0px #aaa;
+  width: 80%;
+  background-color: #243E36;
+  color: #e9e0d8;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.table .price__table {
+  margin: auto;
+  border-spacing: 0;
+  max-width: 70%;
+  font-size: 25px;
+  height: auto;
+}
+.table .price__table th,
+.table .price__table td {
+  padding: 0px 15px;
+  text-align: left;
+  border-bottom: 2px solid #7e501b;
+}
+.table .price__table .type {
+  color: #7e501b;
+}
+.table .price__table th.price, .table .price__table th.time {
+  color: #7e501b;
+}
+.table .price__table .price {
+  padding-left: 50px;
+  text-align: right;
+}
+.table .price__table .time {
+  padding-left: 50px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .price__table, th, td, tr, thead, tbody {
+    display: block;
+    font-size: 18px;
+  }
+  .table {
+    margin-top: 20px;
+  }
+  .individual__text {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .individual__title {
+    font-size: 30px;
+  }
+  .title {
+    height: 300px;
+  }
+}
 .slider_container {
   min-height: 100vh;
   display: flex;
