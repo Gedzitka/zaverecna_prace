@@ -141,42 +141,63 @@ body{
     }
   }
 }
-  .profil-photo{
-    width: 50%;
-    height: auto;
-    display: block;
-    border-radius: 50%;
-    border: 1px solid $brown;
-    margin: 30px auto;
-    margin-bottom: -40px;
-    
-    
-   
-  }
-  .about__section{
-    background-color: $pink;
-    padding: 50px;
-    
-  }
-  .about__text{
-    display: block;
-    margin: auto;
-    
-    background-color: $primary;
-    color: $pink;
-    text-align: justify;
-    font-size: 16px;
-    padding: 20px;
-    box-shadow: $shadow;
-  }
-  
-  .about__titel{
-    text-align: center;
-    font-size: 25px;
-    margin: 20px;
-    color: $brown;
+.about__header{
+ 
+  width: 100%;
+  height: 300px;
 
-  }
+}
+.profil-photo{
+  width: 50%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid $brown;
+  margin: 30px auto;
+  margin-bottom: -40px;
+  
+  
+ 
+}
+.about__section{
+  background-color: $pink;
+  padding: 20px;
+  
+}
+
+.about__h2{
+text-align: center;
+  background-color: $pink;
+  width: 100%;
+  height: 200px;
+  margin:-50px auto;
+  margin-bottom: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  
+}
+.about__text{
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  background-color: $primary;
+  color: $pink;
+  text-align: justify;
+  font-size: 16px;
+  padding: 60px;
+  box-shadow: $shadow;
+}
+
+.about__titel{
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 100px;
+  color: $brown;
+
+}
 
 .title{
   display: flex;
