@@ -1,48 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/scss/style.css">
-    <title>Document</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header__container"> 
-       <nav class="header__navbar">
-        <h1 class="header__h1">Masáže Manon</h1>
-        <button class="header__order">Rezervace</button>
-          <ul class="header__nav-menu">
-             <li class="nav-item">
-                <a href="/index.html" class="nav-link">Domů</a>
-             </li>
-             <li class="nav-item">
-                <a href="/o-mne.html" class="nav-link">O mně</a>
-             </li>
-             <li class="nav-item">
-              <a href="#sluzby" class="nav-link">Služby</a>
-           </li>
-             <li class="nav-item">
-                <a href="/cenik.html" class="nav-link">Ceník</a>
-             </li>
-             <li class="nav-item">
-                <a href="#fotogalerie" class="nav-link">Fotogalerie</a>
-             </li>
-             <li class="nav-item">
-              <a href="#kontakty" class="nav-link">Kontakty</a>
-           </li>
-          </ul>
-          <div class="header__hamburger">
-             <span class="bar"></span>
-             <span class="bar"></span>
-             <span class="bar"></span>
-          </div>
-       </nav>
-    </div>
-  </header>
-    <div class="title" style=" background-image: url(img/hlavicka.jpg);background-position: center;background-size: cover;">
+---
+layout: sablona.njk
+title: Masáže Manon
+---
+    <div class="title" style=" background-image: url(/img/hlavicka.jpg);background-position: center;background-size: cover;">
     
     </div>
     <div class="idividual">
@@ -105,29 +65,4 @@
   </tr>
    </table>  
    </div>
-   <section class="footer">
-    <div class="footer__links">
-    <a  href="/index.html" class="footer-link">Domů</a>
-    <a  href="/o-mne.html" class="footer-link">O mně</a>
-    <a  href="#sluzby" class="footer-link">Služby</a>
-    <a href="/cenik.html" class="footer-link">Ceník</a>
-    <a href="#fotogalerie" class="footer-link">Fotogalerie</a>
-    <a href="#kontakty" class="footer-link">Kontakty</a> 
-  </div>
-  <div class="footer__icons">
-  <img class="icon" src="img/fc.png" alt="facebook">
-    <img class="icon" src="img/email.png" alt="email">
-    <img class="icon" src="img/mob.png" alt="mobil">
-    <img class="icon" src="img/adresa.png" alt="adresa">
-  </div>
-  <div class="footer__copyright">
-    <p class="copy">Copyright ©2022 JA NI NA</p>
-  </div>
-    
-  </section>
-  <!-- script -->
-  <script src="/js/script.js"></script>
-    <script src="/js/swiper-bundle.min.js"></script>
-
-</body>
-</html>
+   
