@@ -129,6 +129,9 @@ h2 {
 }
 
 .about__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 300px;
 }
@@ -505,6 +508,9 @@ h2 {
 }
 
 .procedurs__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 350px;
 }
@@ -632,12 +638,19 @@ h2 {
   .gallery__grid {
     grid-auto-rows: 400px;
   }
+  .gallery__item:hover {
+    transform: scale(1.5);
+  }
 }
 .gallery__item {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.gallery__item:hover {
+  transform: scale(2);
 }
 
 .gallery__item:nth-child(5n+5) {
