@@ -713,7 +713,7 @@ grid-row: span 2;
   border: 2px solid $brown;
 }
 .contact__salon{
-  grid-column: 1/2;
+ font-size: 25px;
 }
 .contact__name{
   text-align: center;
@@ -857,4 +857,7 @@ grid-row: span 2;
           margin:20px ;
          
   }
+  .contact__salon{
+    font-size: 30px;
+   }
 }

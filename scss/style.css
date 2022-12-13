@@ -674,7 +674,7 @@ h2 {
 }
 
 .contact__salon {
-  grid-column: 1/2;
+  font-size: 25px;
 }
 
 .contact__name {
@@ -803,5 +803,8 @@ h2 {
   }
   .contact__box {
     margin: 20px;
+  }
+  .contact__salon {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
