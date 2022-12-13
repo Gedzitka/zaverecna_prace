@@ -142,11 +142,15 @@ body{
   }
 }
 .about__header{
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 300px;
 
 }
+
+
 .profil-photo{
   width: 50%;
   height: auto;
@@ -154,31 +158,24 @@ body{
   border-radius: 50%;
   border: 1px solid $brown;
   margin: 30px auto;
-  margin-bottom: -40px;
-  
-  
- 
+  margin-bottom: -40px
 }
 .about__section{
   background-color: $pink;
   padding: 20px;
   
+  
 }
 
 .about__h2{
-text-align: center;
-  background-color: $pink;
-  width: 100%;
-  height: 200px;
-  margin:-50px auto;
-  margin-bottom: -100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  
-}
+ 
+    background-color: $pink;
+    width: 100%;
+    height:100px;
+    margin:-50px auto;
+    border-radius: 10px;
+    
+  }
 .about__text{
   display: block;
   margin: auto;
@@ -191,13 +188,7 @@ text-align: center;
   box-shadow: $shadow;
 }
 
-.about__titel{
-  text-align: center;
-  font-size: 30px;
-  padding-bottom: 100px;
-  color: $brown;
 
-}
 
 .title{
   display: flex;
@@ -529,8 +520,11 @@ font-size: 30px;
  }
 
  .procedurs__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-height: 350px;
+  height: 350px;
 
 
 }
@@ -626,4 +620,73 @@ height: 350px;
 }
 
 }
+.gallery__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+background-color: $primary;
+}
+
+.gallery__conteiner{
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 100%;
+height: auto;
+
+
+
+background-color: $pink;
+
+}
+
+.gallery__grid {
+max-width: 90%;
+height: auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-auto-rows: 100px;
+grid-auto-flow: dense;
+gap: 1px;
+background-color: $pink;
+padding: 100px 40px 40px 40px;
+border-radius: 10px;
+margin-top: -50px;
+
+}
+
+@media only screen and (min-width: 800px) {
+.gallery__grid{
+  grid-auto-rows: 400px;
+
+}
+.gallery__item:hover{
+  transform: scale(1.5);
+}
+
+
+}
+
+
+.gallery__item {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.gallery__item:hover{
+  transform: scale(2);
+}
+
+.gallery__item:nth-child(5n+5) {
+grid-column: span 2;
+grid-row: span 2;
+}
+
+.gallery__item:nth-child(4n+4) {
+grid-column: span 1;
+grid-row: span 2;
+}
+
 
