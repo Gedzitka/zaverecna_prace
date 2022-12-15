@@ -30,19 +30,19 @@ h2 {
 
 @-webkit-keyframes dis {
   from {
-    display: none;
+    font-size: 0px;
   }
   to {
-    display: block;
+    font-size: 30px;
   }
 }
 
 @keyframes dis {
   from {
-    display: none;
+    font-size: 0px;
   }
   to {
-    display: block;
+    font-size: 30px;
   }
 }
 .header {

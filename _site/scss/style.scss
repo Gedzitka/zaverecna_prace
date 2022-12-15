@@ -30,10 +30,10 @@ body{
     animation-duration: 3s;
   }
   @keyframes dis {
-    from{display: none;      
+    from{font-size: 0px;     
     }
     to{
-      display: block;
+      font-size: 30px;
     }
   }
 // header menu
