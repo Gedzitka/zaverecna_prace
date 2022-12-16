@@ -41,3 +41,22 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+
+  function showHideMore(event) {
+    event.preventDefault();
+  
+    let odstavec = event.target.parentElement;
+    let dots = odstavec.querySelector(".dots");
+    let moreText = odstavec.querySelector(".more");
+    let btnText = odstavec.querySelector(".myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Více";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Méně";
+      moreText.style.display = "inline";
+    }
+  }

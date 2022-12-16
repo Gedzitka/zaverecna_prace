@@ -44,61 +44,13 @@
          </nav>
       </div>
     </header>
-<div  class="section__header" style="background-image: url(/img/Kontakty.png); background-position:center; background-repeat:no-repeat;background-size: cover;">
-    <h2 class="section__title">Kontakty</h2>
+<div  class="section__header" style="background-image: url(/img/{{image}}); background-position:center; background-repeat:no-repeat;background-size: cover;">
+    <h2 class="section__title">{{ title }}</h2>
 </div>
 <section class="section">
     <div class="section__conteiner">
 
-     
-       <div class="contact__conteiner">
-<div class="contact__box">
-    <img class="logo" src="/img/logo ruzove.png" alt="logo">
-    <h2 class="contact__salon">Másérský salón <br> Manon</h2>
-        <p class="contact__name">Ing. Veronika Šachlová</p>
-        <div class="contact__div">
-        <img class="pictogram" src="/img/adresa.png" alt="adresa">
-    <a class="contact__link" href="https://mapy.cz/zakladni?x=15.1123848&y=49.4154972&z=17&l=1&q=Nov%C3%A1%20Cerekev%20305%2C%20394%2015&source=addr&id=11683363&ds=1">Nová Cerekev 305, 394 15 </a>
-</div>
-<div class="contact__div">
-    <img class="pictogram" src="/img/mob.png" alt="mobil">
-        <a class="contact__link" href="tel:774 179 954">  774 179 954 </a>    
-    </div>
-    <div class="contact__div">
-    <img class="pictogram" src="/img/email.png" alt="email">
-    <a class="contact__link" href="mailto:verca.burgrova@centrum.cz">verca.burgrova@centrum.cz</a>
-</div>
-<div class="contact__div">
-    <img class="pictogram" src="/img/fc.png" alt="facebook">
-    <a class="contact__link" href="https://www.facebook.com/masazemanon">facebook.com/masazemanon</a>
-    </div>
-</div>
-    <div class="contact__form__conteiner">
-    <h2 class="form__h2">
-    Rezervujte si termín</h2>
-    <div class="form__nostification">
-      <p class="notificationName">Vyplňte prosím jméno a přijmení</p>
-      <p class="notificationEmail">Vyplňte prosím email</p>
-    </div>
-    <div class="form__content">
-      <form>
-          <input type="text" class="full-name" placeholder="Jméno a přijmení*"><br>
-          <input type="text" class="email" placeholder="E-mail*"><br>
-          <input type="text" class="phone" placeholder="Telefon"><br>
-          <textarea name="message" id="message" rows="6" required placeholder="Zpráva"></textarea><br>
-          <input class="submit" type="submit">
-  
-  
-      </form>
-    </div>
-    </div>
-</div>
-
-
- 
-        <!-- <section class="map">
-            <iframe src="https://mapy.cz/zakladni?q=Nov%C3%A1%20Cerekev%20305%2C%20394%2015&source=addr&id=11683363&ds=1&x=15.1123848&y=49.4154972&z=17" width="80%" height="450" style="border:0;display: block;margin: auto;" allowfullscreen="" loading="lazy"></iframe>
-        </section>  -->
+     {{ content | safe }}
      </div>
 
      </section>

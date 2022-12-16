@@ -22,20 +22,14 @@ body{
   }
   h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color:$brown;
-    border-radius: 10px;
-    display: block;
-    animation-name: dis;
-    animation-duration: 3s;
   }
-  @keyframes dis {
-    from{font-size: 0px;     
-    }
-    to{
+  @media only screen and (min-width: 800px){
+    h2{
       font-size: 30px;
-    }
-  }
+    }}
+  
 // header menu
   .header{
  background-color: $primary;
@@ -160,6 +154,11 @@ body{
   height: 300px;
 
 }
+.section{
+  display:flex;
+  justify-content:center;
+  align-items: center  
+  }
 .section__conteiner{
   width: 80%;
   display: flex;
@@ -183,11 +182,11 @@ body{
   }
 }
 @media only screen and (min-width: 800px){
-
+h2{
+  font-size: 30px;
+}
 .section__titel{
   font-size:60px
-
-
 }
 .section__header{
 height: 500px;
@@ -195,12 +194,23 @@ height: 500px;
 }
 }
 
-// section about
-.about{
-  display:flex;
-  justify-content:center;
-  align-items: center  
+
+.section__title{
+  text-align: center;
+  font-size: 50px;
+  color:$brown;
+  animation-name: dis;
+  animation-duration: 3s;
+}
+@keyframes dis {
+  from{font-size: 0px;     
   }
+  to{
+    font-size: 50px;
+  }
+}
+// section about
+
 .about__photo{
   width: 50%;
   height: auto;
@@ -227,11 +237,7 @@ height: 500px;
   box-shadow: $shadow;
 }
 @media only screen and (min-width: 800px) {
-  .about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+ 
   .section__conteiner{
     display: flex;
     justify-content: center;
@@ -255,66 +261,39 @@ height: 500px;
   
   }
 }
+// section ceník//
 
-
-.title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-
-
-}
-.idividual{
-text-align: center;
-  background-color: $pink;
-  width: 90%;
-  height: 250px;
-  margin: -20px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-
-
-}
-.individual__title{
-font-weight: bold;
-color:$brown;
-text-align: center;
-font-size: 35px;
-}
+.price
+{
+  display:flex;
+  justify-content:center;
+  align-items: center  
+  }
+// idividual
 .individual__text{
- 
+  text-align: center;
   width: 80%;
-
   color:$brown;
   padding: 10px 0 20px 0;
   font-weight: bold;
-  font-size: 18px;
-  
-  
+  font-size: 18px; 
 }
-.table {
-  margin: auto;
+.box__table {
   box-shadow: $shadow; 
-  width: 80%;
+  width: 45%;
   background-color:$primary;
   color: $pink;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 50px;
- 
-
-
+//  table
 .price__table {
- margin: auto;
+  margin: auto;
   border-spacing: 0;
-  max-width: 70%; 
-  font-size: 25px;
+  max-width: 100%; 
+  font-size: 20px;
   height: auto;
+  padding:10px;
 
 
 th,
@@ -366,7 +345,43 @@ font-size: 30px;
 }
 }
 
+@media only screen and (min-width: 800px) {
+ 
+  .individual__text{
+      width: 80%;
+      flex-direction: row;
+      font-size: 20px;
+      margin-bottom: 10px;
+      
+  }
 
+  .box__table {
+  
+   flex-direction: row;
+   
+  }
+  
+  }
+// section domů//
+// voucher
+  .new__voucher{ 
+    max-width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+// slider
+.masage{
+  background-color: $white;
+  padding-top:30px;
+  margin-bottom: 40px;
+
+  
+
+ .masage__type{
+  margin-top: 40px;
+ }
+}
 .slider_container{
   min-height: 100vh;
   display: flex;
@@ -380,7 +395,7 @@ font-size: 30px;
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
- 
+  margin-bottom: 40px;
   z-index: 0;
 }
 .slide-content{
@@ -480,75 +495,18 @@ font-size: 30px;
 
 @media screen and (max-width: 768px) {
   .slide-content{
-    margin: 0 10px;
+    margin: 10px;
   }
   .swiper-navBtn{
     display: none;
   }
 }
-  .new__voucher{ 
-    max-width: 100%;
-    height: auto;
-    padding-top: 100px;
-    padding-bottom: 200px;
- 
-    
-  
-  }
- 
-.masage{
-  background-color: $white;
-  padding-top:30px;
+// contact
 
-  
-
- .masage__type{
-  margin-top: 100px;
- }
-}
- .form__conteiner{
- text-align: center;
-  margin:auto;
-  max-width: 80%;
-  margin: 100px auto;
-  
-
- textarea{
-  width: 80%;
-  min-height: 100px;
-  border: none;
-  margin: 5px;
-  border-radius: 15px;
-  padding: 5px;
-  margin: 5px;
-  font-family: $font-base;
- }
- input{
-  width: 80%;
-  height: 25px;
-  border: none;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 15px;
-  font-family: $font-base;
- }
- .submit{
-  border: none;
-  height: auto;
-  font-size: 20px;
-  color: $white;
-  padding: 5px;
-  background-color:$brown ;
-  border-radius: 10px;
-  font-family: $font-base;
-  margin: 14px;
-  box-shadow: $shadow;
-  font-family: $font-base;
-
- }
- .notificationName,.notificationEmail{
-  display: none;
- }
+.contact{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .home__contact__conteiner{
   width: 80%;
@@ -560,8 +518,6 @@ font-size: 30px;
   padding-top: 50px;
   background-color: $pink;
   border-radius: 10px;
-  
-
 }
 .home__contact__box{
   width: 90%;
@@ -570,7 +526,6 @@ font-size: 30px;
   background-color: $primary;
   color: $brown;
   font-size: 13px;
-  
   border-radius: 10px;
   padding: 40px 15px 15px 15px;
 }
@@ -580,84 +535,11 @@ font-size: 30px;
       margin-top: -40px;
       flex-direction: row;
   }
-  
-  
+
   }
  
-   
-        
-   
+// section procedurs//
 
-
-
- .footer{
-  background-color: $primary;
-height: auto;
-}
- 
- .footer__links{
-  background-color: $primary;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding:5px ;
-  gap:5%;
-  font-weight: bold;
-  font-size: 16px; 
-  text-decoration: none;
-  color:$pink
- }
- .footer-link{
-  color: $pink;
- }
- 
- .footer__icons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap:30px;
-  margin:10px;
- }
- .icon{
-  width: 3%;
-  max-width: 100%;
- 
- }
- .footer__copyright{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $pink;
-  padding: 10px;
- }
- @media(min-width:800px){
-  .footer__links{
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  
- 
-    
-    
-  }
-  .footer__links__conteiner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
- .procedurs__header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 350px;
-
-
-}
 .procedurs__picture{
   background-color: $pink;
   margin: -30px auto;
@@ -665,8 +547,6 @@ height: auto;
   width: 80%;
   border-radius: 10px;
   box-shadow: $shadow;
-  
- 
 }
 .proc__icon{
   max-width: 30%;
@@ -715,14 +595,12 @@ height: auto;
 }
 .procedurs__box{
   margin: -30px 0 60px 0;
-  
- 
- 
 }
-#more{
+.more{
+  
   display: none;
 }
-#myBtn{
+.myBtn{
   border: none;
   font-size: 18px;
   color:$brown;
@@ -750,28 +628,7 @@ height: auto;
 }
 
 }
-.gallery__header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 300px;
-
-}
-
-.gallery__conteiner{
-display: flex;
-justify-content: center;
-align-items: center;
-max-width: 100%;
-height: auto;
-
-
-
-background-color: $pink;
-
-}
-
+//section gallery//
 .gallery__grid {
 max-width: 90%;
 height: auto;
@@ -783,7 +640,7 @@ gap: 1px;
 background-color: $pink;
 padding: 100px 40px 40px 40px;
 border-radius: 10px;
-margin-top: -50px;
+
 
 }
 
@@ -796,10 +653,7 @@ margin-top: -50px;
   transform: scale(1.5);
 }
 
-
 }
-
-
 .gallery__item {
 width: 100%;
 height: 100%;
@@ -818,21 +672,9 @@ grid-row: span 2;
 grid-column: span 1;
 grid-row: span 2;
 }
+// section contact//
 
-.contact__header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 300px;
-}
-.contact{
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-  
-}
+// contacts
 .logo{
   width: 40%;
   height: auto;
@@ -852,18 +694,12 @@ grid-row: span 2;
   margin: 5px;
 }
 .contact__conteiner{
-  width: 80%;
+  width: 100%;
+  margin:30px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 20px;
-  padding-top: 50px;
-  margin-top:-30px;
-  background-color: $pink;
-  border-radius: 10px;
-  
-
 }
 .contact__link{
   text-decoration: none ;
@@ -874,7 +710,6 @@ grid-row: span 2;
   color: $brown;
 }
 .contact__box{
-
   width: 90%;
   height: auto;
   text-align: left;
@@ -884,8 +719,6 @@ grid-row: span 2;
   margin:15px;
   border-radius: 10px;
   padding: 40px 15px 15px 15px;
-  
- 
 }
 .contact__div{
   display: flex;
@@ -893,30 +726,17 @@ grid-row: span 2;
   align-items: center;
   margin: 15px;
   gap: 15px;
- 
-
-
-  
-
 }
 .pictogram{
   max-width: 10%;
   height: auto;
- flex:1 0 50%
-
- 
-
+  flex:1 0 50%
 }
-
-
 .contact__form__conteiner{
   text-align: center;
    margin:auto;
    width: 100%;
    height: auto;
- 
-   
- 
   textarea{
    width: 80%;
    min-height: 100px;
@@ -962,7 +782,7 @@ grid-row: span 2;
       
   }
   .contact__conteiner{
-      margin-top: -40px;
+     
       flex-direction: row;
   }
   .contact__header{
@@ -971,12 +791,11 @@ grid-row: span 2;
   }
   @media only screen and (min-width: 1000px) {
       .contact__conteiner{
-          margin-top: -40px;
+          
           flex-direction: row;
       }
-      .contact__h2{
-          font-size: 60px;
-      }
+     
+    
       .contact__header{
           height: 600px;
       }
@@ -991,4 +810,61 @@ grid-row: span 2;
   .contact__salon{
     font-size: 30px;
    }
+}
+// footer//
+
+.footer{
+  background-color: $primary;
+height: auto;
+}
+ 
+ .footer__links{
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:5px ;
+  gap:5%;
+  margin:15px;
+ }
+ .footer-link{
+  color: $pink;
+  text-decoration: none;
+  font-weight: bold;
+
+ }
+ 
+ .footer__icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  margin:10px;
+ }
+ .icon{
+  width: 3%;
+  max-width: 100%;
+ }
+ .footer__copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $pink;
+  padding: 10px;
+ }
+ @media(min-width:800px){
+  .footer__links{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  font-size: 18px; 
+    
+  }
+  .footer__links__conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
