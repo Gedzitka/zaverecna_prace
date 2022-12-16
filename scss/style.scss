@@ -186,8 +186,18 @@ h2{
   font-size: 30px;
 }
 .section__titel{
-  font-size:60px
+  font-size:60px;
+  animation-name: dis;
+  animation-duration: 4s;
 }
+@keyframes dis {
+  from{font-size: 0px;     
+  }
+  to{
+    font-size: 60px;
+  }
+}
+
 .section__header{
 height: 500px;
   
@@ -197,16 +207,16 @@ height: 500px;
 
 .section__title{
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   color:$brown;
   animation-name: dis;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 @keyframes dis {
   from{font-size: 0px;     
   }
   to{
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 // section about
