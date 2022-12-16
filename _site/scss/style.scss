@@ -186,8 +186,18 @@ h2{
   font-size: 30px;
 }
 .section__titel{
-  font-size:60px
+  font-size:60px;
+  animation-name: dis;
+  animation-duration: 4s;
 }
+@keyframes dis {
+  from{font-size: 0px;     
+  }
+  to{
+    font-size: 60px;
+  }
+}
+
 .section__header{
 height: 500px;
   
@@ -197,16 +207,16 @@ height: 500px;
 
 .section__title{
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   color:$brown;
   animation-name: dis;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 @keyframes dis {
   from{font-size: 0px;     
   }
   to{
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 // section about
@@ -280,8 +290,7 @@ height: 500px;
 }
 .box__table {
   box-shadow: $shadow; 
-  width: 80%;
-  height: 70%;
+  width: 90%;
   background-color:$primary;
   color: $pink;
   padding: 15px;
@@ -291,9 +300,8 @@ height: 500px;
 .price__table {
   margin: auto;
   border-spacing: 0;
-  max-width: 100%; 
+  width: 100%; 
   font-size: 20px;
-  height: auto;
   padding:10px;
 
 
@@ -322,7 +330,7 @@ th.price,th.time{
 }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .price__table, th, td, tr, thead, tbody {
   display: block;
   font-size: 18px;
@@ -346,23 +354,11 @@ font-size: 30px;
 }
 }
 
-@media only screen and (min-width: 800px) {
- 
-  .individual__text{
-      width: 80%;
-      flex-direction: row;
-      font-size: 20px;
-      margin-bottom: 10px;
-      
-  }
 
-  .box__table {
+
+ 
   
-   flex-direction: row;
-   
-  }
-  
-  }
+ 
 // section domů//
 // voucher
   .new__voucher{ 

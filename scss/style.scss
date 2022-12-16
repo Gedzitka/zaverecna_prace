@@ -290,7 +290,7 @@ height: 500px;
 }
 .box__table {
   box-shadow: $shadow; 
-  width: 80%;
+  width: 90%;
   background-color:$primary;
   color: $pink;
   padding: 15px;
@@ -330,7 +330,7 @@ th.price,th.time{
 }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .price__table, th, td, tr, thead, tbody {
   display: block;
   font-size: 18px;
@@ -354,23 +354,11 @@ font-size: 30px;
 }
 }
 
-@media only screen and (min-width: 800px) {
- 
-  .individual__text{
-      width: 80%;
-      flex-direction: row;
-      font-size: 20px;
-      margin-bottom: 10px;
-      
-  }
 
-  .box__table {
+
+ 
   
-   flex-direction: row;
-   
-  }
-  
-  }
+ 
 // section domů//
 // voucher
   .new__voucher{ 
