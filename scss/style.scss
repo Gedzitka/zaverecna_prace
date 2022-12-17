@@ -185,7 +185,7 @@ body{
 }
 .section__title{
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color:$brown;
   animation-name: siz;
   animation-duration: 4s;
@@ -194,7 +194,7 @@ body{
   from{font-size: 0px;     
   }
   to{
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media only screen and (min-width: 800px){
