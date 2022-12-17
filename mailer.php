@@ -30,5 +30,5 @@ $name = strip_tags(trim($_POST["name"]));
     mail($recipient, $subject, $email_content, $email_headers);
    
     // Přesměrování na stránku, pokud vše proběhlo v pořádku
-    header("Location:https://www.hacknibudoucnost.cz/dekovaci.html?success=1#form");
+    header("Location:https://whimsical-sprite-71b70f.netlify.app/dekovaci/");
 ?>
