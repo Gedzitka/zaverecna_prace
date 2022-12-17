@@ -587,13 +587,22 @@ a {
 
 .procedurs__box {
   margin: -30px 0 60px 0;
-  -webkit-animation-name: transver;
-          animation-name: transver;
+  -webkit-animation-name: trans;
+          animation-name: trans;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
 }
 
-@keyframes transver {
+@-webkit-keyframes trans {
+  from {
+    margin: 0px 0 60px 0;
+  }
+  to {
+    margin: -30px 0 60px 0;
+  }
+}
+
+@keyframes trans {
   from {
     margin: 0px 0 60px 0;
   }
@@ -816,13 +825,22 @@ a {
 .podekovani {
   font-size: 80px;
   color: #7e501b;
-  -webkit-animation-name: siz;
-          animation-name: siz;
+  -webkit-animation-name: vel;
+          animation-name: vel;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
 }
 
-@keyframes transver {
+@-webkit-keyframes vel {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+
+@keyframes vel {
   from {
     font-size: 0px;
   }

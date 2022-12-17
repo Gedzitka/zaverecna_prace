@@ -176,13 +176,12 @@ title: Masáže Manon
     <p class="notificationEmail">Vyplňte prosím email</p>
   </div>
   <div class="form__content">
-    <form>
-        <input type="text" class="full-name" placeholder="Jméno a přijmení*"><br>
-        <input type="text" class="email" placeholder="E-mail*"><br>
-        <input type="text" class="phone" placeholder="Telefon"><br>
-        <textarea name="message" id="message" rows="6" required placeholder="Zpráva"></textarea><br>
-        <input class="submit" type="submit">
-
+    <form action="mailer.php" method="post">
+      <input type="text" name="name" class="full-name" placeholder="Jméno a přijmení*"><br>
+      <input type="text" name="email" class="email" placeholder="E-mail*"><br>
+      <input type="text" name="phone" class="phone" placeholder="Telefon"><br>
+      <textarea name="message" rows="6" required placeholder="Zpráva"></textarea><br>
+      <input class="submit" type="submit">
 
     </form>
   </div>
