@@ -199,18 +199,6 @@ body{
 }
 @media only screen and (min-width: 800px){
 
-.section__titel{
-  font-size:60px;
-  animation-name: dis;
-  animation-duration: 4s;
-}
-@keyframes dis {
-  from{font-size: 0px;     
-  }
-  to{
-    font-size: 60px;
-  }
-}
 
 .section__header{
 height: 500px;
