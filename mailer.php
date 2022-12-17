@@ -12,7 +12,7 @@ $name = strip_tags(trim($_POST["name"]));
     }
  
     // Nastavte si email, na který chcete, aby se vyplněný formulář odeslal - jakýkoliv váš email
-    $recipient = "verca.burgrova@centrum.cz";
+    $recipient = "dvorakova.jana.vf@gmail.com";
  
     // Nastavte předmět odeslaného emailu
     $subject = "Máte nový kontakt od: $name";

@@ -812,6 +812,28 @@ grid-row: span 2;
     font-size: 30px;
    }
 }
+.thanks{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+.podekovani{
+  font-size: 80px;
+  color: $brown;
+  animation-name: siz;
+  animation-duration: 4s;
+}
+@keyframes transver {
+  from{font-size: 0px ;
+    
+  }
+  to{
+    font-size: 80px;
+  }
+}
+
 // footer//
 
 .footer{

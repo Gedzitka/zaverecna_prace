@@ -806,6 +806,30 @@ a {
     font-size: 30px;
   }
 }
+.thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.podekovani {
+  font-size: 80px;
+  color: #7e501b;
+  -webkit-animation-name: siz;
+          animation-name: siz;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@keyframes transver {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
 .footer {
   background-color: #243E36;
   height: auto;
