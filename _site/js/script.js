@@ -1,3 +1,4 @@
+// nav menu
 const hamburger = document.querySelector(".header__hamburger");
 const navMenu = document.querySelector(".header__nav-menu");
 hamburger.addEventListener("click",function (){
@@ -11,7 +12,7 @@ hamburger.addEventListener("click",function (){
 
 
   
-  
+  // slider
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -42,6 +43,7 @@ var swiper = new Swiper(".slide-content", {
     },
   });
 
+  // more
   function showHideMore(event) {
     event.preventDefault();
   
