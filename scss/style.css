@@ -597,8 +597,9 @@ a {
 .procedurs__order {
   border: none;
   font-size: 18px;
+  text-align: center;
   color: white;
-  padding: 8px 16px;
+  padding: 8px 8px;
   background-color: #7e501b;
   border-radius: 15px;
   font-family: "Titillium Web", sans-serif;
