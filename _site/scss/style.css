@@ -199,7 +199,7 @@ a {
 }
 .section__title {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color: #7e501b;
   -webkit-animation-name: siz;
           animation-name: siz;
@@ -212,7 +212,7 @@ a {
     font-size: 0px;
   }
   to {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -221,33 +221,10 @@ a {
     font-size: 0px;
   }
   to {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media only screen and (min-width: 800px) {
-  .section__titel {
-    font-size: 60px;
-    -webkit-animation-name: dis;
-            animation-name: dis;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-  }
-  @-webkit-keyframes dis {
-    from {
-      font-size: 0px;
-    }
-    to {
-      font-size: 60px;
-    }
-  }
-  @keyframes dis {
-    from {
-      font-size: 0px;
-    }
-    to {
-      font-size: 60px;
-    }
-  }
   .section__header {
     height: 500px;
   }
@@ -610,13 +587,22 @@ a {
 
 .procedurs__box {
   margin: -30px 0 60px 0;
-  -webkit-animation-name: transver;
-          animation-name: transver;
+  -webkit-animation-name: trans;
+          animation-name: trans;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
 }
 
-@keyframes transver {
+@-webkit-keyframes trans {
+  from {
+    margin: 0px 0 60px 0;
+  }
+  to {
+    margin: -30px 0 60px 0;
+  }
+}
+
+@keyframes trans {
   from {
     margin: 0px 0 60px 0;
   }
@@ -827,6 +813,39 @@ a {
   }
   .contact__salon {
     font-size: 30px;
+  }
+}
+.thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.podekovani {
+  font-size: 80px;
+  color: #7e501b;
+  -webkit-animation-name: vel;
+          animation-name: vel;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes vel {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+
+@keyframes vel {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 80px;
   }
 }
 .footer {

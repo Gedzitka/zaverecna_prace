@@ -185,7 +185,7 @@ body{
 }
 .section__title{
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color:$brown;
   animation-name: siz;
   animation-duration: 4s;
@@ -194,23 +194,11 @@ body{
   from{font-size: 0px;     
   }
   to{
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media only screen and (min-width: 800px){
 
-.section__titel{
-  font-size:60px;
-  animation-name: dis;
-  animation-duration: 4s;
-}
-@keyframes dis {
-  from{font-size: 0px;     
-  }
-  to{
-    font-size: 60px;
-  }
-}
 
 .section__header{
 height: 500px;
@@ -595,10 +583,10 @@ font-size: 30px;
 }
 .procedurs__box{
   margin: -30px 0 60px 0;
-  animation-name: transver;
+  animation-name: trans;
   animation-duration: 4s;
 }
-@keyframes transver {
+@keyframes trans {
   from{margin: 0px 0 60px 0;
     
   }
@@ -824,6 +812,28 @@ grid-row: span 2;
     font-size: 30px;
    }
 }
+.thanks{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+.podekovani{
+  font-size: 80px;
+  color: $brown;
+  animation-name: vel;
+  animation-duration: 4s;
+}
+@keyframes vel {
+  from{font-size: 0px ;
+    
+  }
+  to{
+    font-size: 80px;
+  }
+}
+
 // footer//
 
 .footer{

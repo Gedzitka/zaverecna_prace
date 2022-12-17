@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
     // Zkopírovat css/ to _site/css/
     eleventyConfig.addPassthroughCopy("scss");
     eleventyConfig.addPassthroughCopy("js");
+    eleventyConfig.addPassthroughCopy("php");
    
     // ...necháme, co už v konfiguraci je, a přidáme:
     return {
