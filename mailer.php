@@ -7,7 +7,7 @@ $name = strip_tags(trim($_POST["name"]));
  
     // Kontroluje data popř. přesměruje na chybovou adresu
     if (empty($name) OR empty($phone) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location:https://www.hacknibudoucnost.cz/index.html?success=-1#form");
+        header("Location:https://whimsical-sprite-71b70f.netlify.app/kontakty/#formular");
         exit;
     }
  
