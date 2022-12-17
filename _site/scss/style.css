@@ -27,6 +27,10 @@ h2 {
     font-size: 30px;
   }
 }
+a {
+  text-decoration: none;
+}
+
 .header {
   background-color: #243E36;
   position: fixed;
@@ -193,10 +197,34 @@ h2 {
     margin-top: -30px;
   }
 }
-@media only screen and (min-width: 800px) {
-  h2 {
-    font-size: 30px;
+.section__title {
+  text-align: center;
+  font-size: 50px;
+  color: #7e501b;
+  -webkit-animation-name: siz;
+          animation-name: siz;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes siz {
+  from {
+    font-size: 0px;
   }
+  to {
+    font-size: 50px;
+  }
+}
+
+@keyframes siz {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 800px) {
   .section__titel {
     font-size: 60px;
     -webkit-animation-name: dis;
@@ -222,33 +250,6 @@ h2 {
   }
   .section__header {
     height: 500px;
-  }
-}
-.section__title {
-  text-align: center;
-  font-size: 30px;
-  color: #7e501b;
-  -webkit-animation-name: dis;
-          animation-name: dis;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-@-webkit-keyframes dis {
-  from {
-    font-size: 0px;
-  }
-  to {
-    font-size: 30px;
-  }
-}
-
-@keyframes dis {
-  from {
-    font-size: 0px;
-  }
-  to {
-    font-size: 30px;
   }
 }
 .about__photo {
@@ -592,9 +593,11 @@ h2 {
 
 .procedurs__order {
   border: none;
+  width: 90px;
   font-size: 18px;
+  text-align: center;
   color: white;
-  padding: 8px 16px;
+  padding: 8px 8px;
   background-color: #7e501b;
   border-radius: 15px;
   font-family: "Titillium Web", sans-serif;
@@ -662,7 +665,7 @@ h2 {
   grid-auto-flow: dense;
   gap: 1px;
   background-color: #e9e0d8;
-  padding: 100px 40px 40px 40px;
+  padding: 40px 40px 40px 40px;
   border-radius: 10px;
 }
 
@@ -687,11 +690,6 @@ h2 {
 
 .gallery__item:nth-child(5n+5) {
   grid-column: span 2;
-  grid-row: span 2;
-}
-
-.gallery__item:nth-child(4n+4) {
-  grid-column: span 1;
   grid-row: span 2;
 }
 
