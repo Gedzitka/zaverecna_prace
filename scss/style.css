@@ -791,7 +791,7 @@ a {
   font-family: "Titillium Web", sans-serif;
 }
 .contact__form__conteiner .sumit:hover {
-  border-color: #243E36;
+  background-color: #243E36;
 }
 .contact__form__conteiner .notificationName, .contact__form__conteiner .notificationEmail {
   display: none;
