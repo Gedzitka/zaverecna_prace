@@ -887,6 +887,10 @@ a {
   font-weight: bold;
 }
 
+.footer-link:hover {
+  color: #7e501b;
+}
+
 .footer__icons {
   display: flex;
   justify-content: center;
