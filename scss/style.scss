@@ -80,6 +80,9 @@ body{
     font-weight: bold;
     box-shadow: $shadow-dack;
   }
+  .header__order:hover{
+    background-color: $primary;
+  }
   .header__nav-menu{
     display: flex;
     justify-content: space-between;
@@ -572,6 +575,9 @@ font-size: 30px;
   margin: 20px auto;
   display: block;
 }
+.procedurs__order:hover{
+  background-color: $primary;
+}
 .procedurs__box{
   margin: -30px 0 60px 0;
   animation-name: trans;
@@ -760,6 +766,9 @@ grid-row: span 2;
    box-shadow: $shadow;
    font-family: $font-base;
  
+  }
+  .sumit:hover{
+    border-color: $primary;
   }
   .notificationName,.notificationEmail{
    display: none;

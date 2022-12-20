@@ -84,6 +84,10 @@ a {
   box-shadow: 0px 5px 10px 0px rgb(48, 45, 45);
 }
 
+.header__order:hover {
+  background-color: #243E36;
+}
+
 .header__nav-menu {
   display: flex;
   justify-content: space-between;
@@ -585,6 +589,10 @@ a {
   display: block;
 }
 
+.procedurs__order:hover {
+  background-color: #243E36;
+}
+
 .procedurs__box {
   margin: -30px 0 60px 0;
   -webkit-animation-name: trans;
@@ -659,7 +667,7 @@ a {
     grid-auto-rows: 400px;
   }
   .gallery__item:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 .gallery__item {
@@ -670,7 +678,7 @@ a {
 }
 
 .gallery__item:hover {
-  transform: scale(2);
+  transform: scale(1.2);
 }
 
 .gallery__item:nth-child(5n+5) {
@@ -781,6 +789,9 @@ a {
   margin: 14px;
   box-shadow: 0px 5px 10px 0px #aaa;
   font-family: "Titillium Web", sans-serif;
+}
+.contact__form__conteiner .sumit:hover {
+  border-color: #243E36;
 }
 .contact__form__conteiner .notificationName, .contact__form__conteiner .notificationEmail {
   display: none;
