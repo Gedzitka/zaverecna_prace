@@ -84,6 +84,10 @@ a {
   box-shadow: 0px 5px 10px 0px rgb(48, 45, 45);
 }
 
+.header__order:hover {
+  background-color: #243E36;
+}
+
 .header__nav-menu {
   display: flex;
   justify-content: space-between;
@@ -564,7 +568,6 @@ a {
   text-align: justify;
   padding: 20px;
   color: #e9e0d8;
-  box-shadow: 0px 5px 10px 0px #aaa;
   margin-bottom: 15px;
 }
 
@@ -585,8 +588,13 @@ a {
   display: block;
 }
 
+.procedurs__order:hover {
+  background-color: #243E36;
+}
+
 .procedurs__box {
   margin: -30px 0 60px 0;
+  height: 70%;
   -webkit-animation-name: trans;
           animation-name: trans;
   -webkit-animation-duration: 4s;
@@ -652,6 +660,7 @@ a {
   gap: 1px;
   background-color: #e9e0d8;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -659,7 +668,7 @@ a {
     grid-auto-rows: 400px;
   }
   .gallery__item:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 .gallery__item {
@@ -670,7 +679,7 @@ a {
 }
 
 .gallery__item:hover {
-  transform: scale(2);
+  transform: scale(1.2);
 }
 
 .gallery__item:nth-child(5n+5) {
@@ -782,6 +791,9 @@ a {
   box-shadow: 0px 5px 10px 0px #aaa;
   font-family: "Titillium Web", sans-serif;
 }
+.contact__form__conteiner .sumit:hover {
+  background-color: #243E36;
+}
 .contact__form__conteiner .notificationName, .contact__form__conteiner .notificationEmail {
   display: none;
 }
@@ -791,6 +803,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -874,6 +887,10 @@ a {
   color: #e9e0d8;
   text-decoration: none;
   font-weight: bold;
+}
+
+.footer-link:hover {
+  color: #7e501b;
 }
 
 .footer__icons {
