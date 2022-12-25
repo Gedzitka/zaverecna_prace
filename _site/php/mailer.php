@@ -7,7 +7,7 @@ $name = strip_tags(trim($_POST["name"]));
  
     // Kontroluje data popř. přesměruje na chybovou adresu
     if (empty($name) OR empty($phone) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location:https://whimsical-sprite-71b70f.netlify.app/kontakty/#formular");
+        header("Location:https://masazemanon.cz/kontakty/#formular");
         exit;
     }
  
@@ -30,5 +30,5 @@ $name = strip_tags(trim($_POST["name"]));
     mail($recipient, $subject, $email_content, $email_headers);
    
     // Přesměrování na stránku, pokud vše proběhlo v pořádku
-    header("Location:https://whimsical-sprite-71b70f.netlify.app/dekovaci/");
+    header("Location:https://masazemanon.cz/dekovaci/");
 ?>
