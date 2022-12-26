@@ -119,7 +119,7 @@ var swiper = new Swiper(".slide-content", {
     },
   
         languages : {
-/*            'en' : {
+            'en' : {
                 consent_modal : {
                     title :  "Cookies information",
                     description :  'By clicking on "Accept all cookies", you agree to storage cookies on your device, which helps with site navigation, data usage analysis and our marketing efforts.',
@@ -199,7 +199,7 @@ var swiper = new Swiper(".slide-content", {
                         }
                     ]
                 }
-            },  */
+            },  
                'cs' : {
                 consent_modal : {
                     title :  "Informace o cookies",
