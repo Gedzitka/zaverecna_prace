@@ -29,6 +29,7 @@ h2 {
 }
 a {
   text-decoration: none;
+  color: #e9e0d8;
 }
 
 .header {
@@ -327,6 +328,15 @@ a {
 .box__table .price__table .time {
   padding-left: 50px;
   text-align: right;
+}
+
+td.a {
+  color: #e9e0d8;
+  text-decoration: none;
+}
+
+td.a:hover {
+  color: #7e501b;
 }
 
 @media only screen and (max-width: 800px) {
