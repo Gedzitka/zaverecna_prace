@@ -312,11 +312,11 @@ th.price,th.time{
 }
 }
 }
-a{
+td.a{
   color: $pink;
   text-decoration: none;
 }
-a:hover{
+td.a:hover{
   color: $brown;
 }
 @media only screen and (max-width: 800px) {
