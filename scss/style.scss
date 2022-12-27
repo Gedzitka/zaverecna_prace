@@ -312,7 +312,13 @@ th.price,th.time{
 }
 }
 }
-
+a.table{
+  color: $pink;
+  text-decoration: none;
+}
+a.table:hover{
+  color: $brown;
+}
 @media only screen and (max-width: 800px) {
   .price__table, th, td, tr, thead, tbody {
   display: block;
@@ -792,6 +798,7 @@ justify-content: center;
 align-items: center;
 margin-bottom: 20px;
  }
+ 
 @media only screen and (min-width: 800px) {
   .contact__box{
       font-size: 18px;
