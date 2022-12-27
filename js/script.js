@@ -63,4 +63,33 @@ var swiper = new Swiper(".slide-content", {
     }
   }
 
- 
+  import axios from "axios";
+
+  // 1. Import the library
+  import Botpoison from "@botpoison/browser";
+  
+  // 2. Create a new instance with your public key
+  const botpoison = new Botpoison({
+      publicKey: 'pk_1b04cd60-c7ab-4d30-a096-d38fef54f11a'
+  });
+  
+  const sendMessage = async (message) => {
+    // 3. Process a challenge
+    const { solution } = await botpoison.challenge();
+    await axios.post("https://masazemanon.cz/", {
+      message,
+      // 4. Forward the solution
+      _botpoison: solution,
+    });
+  }
+  var formElement = document.getElementById("form");
+  var buttonElement = document.getElementById("button");
+  formElement.addEventListener("botpoison-challenge-start", function () {
+    buttonElement.setAttribute("disabled", "disabled");
+  });
+  formElement.addEventListener("botpoison-challenge-success", function () {
+    buttonElement.removeAttribute("disabled");
+  });
+  formElement.addEventListener("botpoison-challenge-error", function () {
+    buttonElement.removeAttribute("disabled");
+  });
