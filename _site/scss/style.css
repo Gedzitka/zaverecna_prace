@@ -798,6 +798,12 @@ a {
   display: none;
 }
 
+.souhlas {
+  padding-left: 0px;
+  margin: 0px;
+  text-align: left;
+}
+
 .map {
   width: 100%;
   display: flex;

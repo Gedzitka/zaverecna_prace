@@ -7,14 +7,17 @@
   <link rel="stylesheet" href="/scss/swiper-bundle.min.css">
   <link rel="stylesheet" href="/scss/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet"> 
-  <title>Masáže Manon - Nová Cerekev nedaleko Pelhřimova v kraji Vysočina. Nabízí klasickou,Breussovu a lymfatickou masáž.Rehabilitační cvičení-Dornovu metodu, reiky a akupresuru.Kobinace metod, individuální přístup, dárkové poukazy. </title>  <title>Masáže Manon</title>
+  <title>Masáže Manon - Ing. Veronika Šachlová, Nová Cerekev okres Pelhřimova, Vysočina. Nabízí klasickou,Breussovu a lymfatickou masáž.Rehabilitační cvičení-Dornovu metodu, reiky a akupresuru.Kobinace metod, individuální přístup, dárkové poukazy. </title>
 </head>
 <body>
+
 <!-- header -->
     <header class="header">
       <div class="header__container"> 
          <nav class="header__navbar">
+         <a href="/"> 
           <h1 class="header__h1">Masáže Manon</h1>
+          </a>
           <a href="/kontakty/#formular"class="header__order">Rezervace</a>
             <ul class="header__nav-menu">
                <li class="nav-item">
@@ -220,11 +223,22 @@
     <p class="notificationEmail">Vyplňte prosím email</p>
   </div>
   <div class="form__content">
-    <form action="/php/mailer.php" method="post">
+    <form id="form" action="https://submit-form.com/EtNngosg" method="post">
+
+      <input
+      type="checkbox"
+      name="Paste your custom honeypot here"
+      style="display:none"
+      tabindex="-1"
+      autocomplete="off"
+    />
+      <input type="hidden" name="_redirect" value="https://masazemanon.cz/dekovaci/">
       <input type="text" name="name" class="full-name" placeholder="Jméno a přijmení*"><br>
       <input type="text" name="email" class="email" placeholder="E-mail*"><br>
       <input type="text" name="phone" class="phone" placeholder="Telefon"><br>
       <textarea name="message" rows="6" required placeholder="Zpráva"></textarea><br>
+      <input class="souhlas"
+      type="checkbox" checked name="souhlas" value="ano">Souhlasím se zpracováním osobních údajů <br>
       <input class="submit" type="submit">
 
     </form>

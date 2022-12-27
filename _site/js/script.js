@@ -62,3 +62,5 @@ var swiper = new Swiper(".slide-content", {
       moreText.style.display = "inline";
     }
   }
+
+  
