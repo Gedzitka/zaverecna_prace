@@ -747,7 +747,7 @@ grid-row: span 2;
    margin: 5px;
    font-family: $font-base;
   }
-  input{
+  .input{
    width: 80%;
    height: 25px;
    border: none;
@@ -757,6 +757,7 @@ grid-row: span 2;
    font-family: $font-base;
   }
   .submit{
+  width: 70%;
    border: none;
    height: auto;
    font-size: 20px;
@@ -778,9 +779,10 @@ grid-row: span 2;
   }
  }
  .souhlas{
+  max-width:100%;
+  width: 20px;
   padding-left: 0px;
-
-  margin:0px;
+  margin:10px;
   text-align: left;
  }
  .map{
