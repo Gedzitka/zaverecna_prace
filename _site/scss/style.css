@@ -179,19 +179,8 @@ a {
   margin-top: -30px;
   background-color: #e9e0d8;
   border-radius: 10px;
-  -webkit-animation-name: transver;
-          animation-name: transver;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-@-webkit-keyframes transver {
-  from {
-    margin-top: 0px;
-  }
-  to {
-    margin-top: -30px;
-  }
+  animation-name: transver;
+  animation-duration: 4s;
 }
 
 @keyframes transver {
@@ -206,19 +195,8 @@ a {
   text-align: center;
   font-size: 40px;
   color: #7e501b;
-  -webkit-animation-name: siz;
-          animation-name: siz;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-@-webkit-keyframes siz {
-  from {
-    font-size: 0px;
-  }
-  to {
-    font-size: 40px;
-  }
+  animation-name: siz;
+  animation-duration: 4s;
 }
 
 @keyframes siz {
@@ -598,26 +576,11 @@ td.a:hover {
   display: block;
 }
 
-.procedurs__order:hover {
-  background-color: #243E36;
-}
-
-.procedurs__box {
-  margin: -30px 0 60px 0;
-  height: 70%;
-  -webkit-animation-name: trans;
-          animation-name: trans;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-@-webkit-keyframes trans {
-  from {
-    margin: 0px 0 60px 0;
-  }
-  to {
-    margin: -30px 0 60px 0;
-  }
+.procedurs__boxes {
+  width: 100%;
+  margin: -10px 0 60px 0;
+  animation-name: trans;
+  animation-duration: 4s;
 }
 
 @keyframes trans {
@@ -625,9 +588,18 @@ td.a:hover {
     margin: 0px 0 60px 0;
   }
   to {
-    margin: -30px 0 60px 0;
+    margin: -10px 0 60px 0;
   }
 }
+.procedurs__order:hover {
+  background-color: #243E36;
+}
+
+.procedurs__box {
+  margin: -30px 0 60px 0;
+  height: 70%;
+}
+
 .more {
   display: none;
 }
@@ -647,7 +619,6 @@ td.a:hover {
 @media (min-width: 1024px) {
   .procedurs__boxes {
     display: grid;
-    margin-top: 20px;
     grid-template-columns: auto auto auto;
     gap: 5px;
     row-gap: 30px;
@@ -863,19 +834,8 @@ td.a:hover {
 .podekovani {
   font-size: 80px;
   color: #7e501b;
-  -webkit-animation-name: vel;
-          animation-name: vel;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-@-webkit-keyframes vel {
-  from {
-    font-size: 0px;
-  }
-  to {
-    font-size: 80px;
-  }
+  animation-name: vel;
+  animation-duration: 4s;
 }
 
 @keyframes vel {

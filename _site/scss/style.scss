@@ -358,6 +358,7 @@ font-size: 30px;
     padding-top: 100px;
     padding-bottom: 200px;
   }
+  
 // slider
 .masage{
   background-color: $white;
@@ -564,8 +565,9 @@ font-size: 30px;
   color: $pink;
   margin-bottom: 15px;
   
-  
 }
+
+
 
 .procedurs__order{
   border: none;
@@ -583,24 +585,31 @@ font-size: 30px;
   margin: 20px auto;
   display: block;
 }
-.procedurs__order:hover{
-  background-color: $primary;
-}
-.procedurs__box{
-  margin: -30px 0 60px 0;
-  height: 70%;
+.procedurs__boxes{
+  width: 100%;
+  margin: -10px 0 60px 0;
   animation-name: trans;
   animation-duration: 4s;
- 
+  
 }
 @keyframes trans {
   from{margin: 0px 0 60px 0;
     
   }
   to{
-    margin: -30px 0 60px 0;
+    margin: -10px 0 60px 0;
   }
 }
+.procedurs__order:hover{
+  background-color: $primary;
+}
+.procedurs__box{
+  margin: -30px 0 60px 0;
+  height: 70%;
+ 
+ 
+}
+
 
 
 .more{
@@ -621,7 +630,7 @@ font-size: 30px;
 @media(min-width:1024px){
   .procedurs__boxes {
       display: grid;
-      margin-top: 20px;
+      
       grid-template-columns: auto auto auto;
       gap: 5px;
       row-gap: 30px;
