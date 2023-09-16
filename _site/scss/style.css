@@ -640,11 +640,10 @@ td.a:hover {
   }
 }
 .gallery__grid {
-  padding: 20px;
-  width: auto;
+  max-width: auto;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 250px);
   grid-auto-flow: dense;
   gap: 1px;
   background-color: #e9e0d8;
@@ -652,9 +651,9 @@ td.a:hover {
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
   .gallery__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 250px);
     width: auto;
   }
   .gallery__item:hover {
